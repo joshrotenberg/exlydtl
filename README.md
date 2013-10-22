@@ -12,7 +12,9 @@ Elixir library.
       erlydtl: [template_path: 'templates',
                 template_namespace: :my_app_templates,
                 template_out_dir: "ebin"]]
-    # ...
+    # add exlydtl to your deps. it already depends on erlydtl so you
+    # shouldn't need both, but you can add it with 'override: true' if 
+    # you want to call it out explicitly.
     defp deps do
         [{:exlydtl, path: "../exlydtl"}]
     end
