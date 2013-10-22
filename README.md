@@ -10,7 +10,7 @@ Elixir library.
       elixir: "~> 0.10.3",
       deps: deps,
       erlydtl: [template_path: 'templates',
-                template_namespace: "my_app_templates",
+                template_namespace: :my_app_templates,
                 template_out_dir: "ebin"]]
     # ...
     defp deps do
@@ -20,7 +20,7 @@ Elixir library.
 ```
 Then:
 ```
-shell$ mix erlydtl
+shell$ mix erlydtl.compile
 ```
 
 The above configuration is the default.

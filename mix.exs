@@ -8,15 +8,13 @@ defmodule Exlydtl.Mixfile do
       deps: deps ]
   end
 
-  # Configuration for the OTP application
   def application do
-    [mod: { Exlydtl, [] }]
+      []
   end
 
   # Returns the list of dependencies in the format:
   # { :foobar, "~> 0.1", git: "https://github.com/elixir-lang/foobar.git" }
   defp deps do
-    [{:erlydtl, github: "evanmiller/erlydtl"},
-       { :ex_doc, github: "elixir-lang/ex_doc" }]
+    [{:erlydtl, git: "https://github.com/evanmiller/erlydtl.git"}]
   end
 end
